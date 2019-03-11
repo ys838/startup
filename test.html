@@ -1,0 +1,36 @@
+<html>
+<head>
+<script type="text/javascript"
+  src="js/dygraph.js"></script>
+<link rel="stylesheet" src="css/dygraph.css" />
+</head>
+<body>
+<div id="graphdiv"></div>
+<script type="text/javascript">
+  g = new Dygraph(
+
+    // containing div
+    document.getElementById("graphdiv"),
+
+    // CSV or path to a CSV file.
+    "Date,Temperature\n" +
+    "2008-05-07,75\n" +
+    "2008-05-08,70\n" +
+    "2008-05-09,80\n"
+
+  );
+</script>
+<div id="graphdiv3"
+style="width:500px; height:300px;"></div>
+<script type="text/javascript">
+    g3 = new Dygraph(
+      document.getElementById("graphdiv3"),
+      "temperatures.csv",
+      {
+        rollPeriod: 7,
+        showRoller: true
+      }
+    );
+  </script>
+</body>
+</html>

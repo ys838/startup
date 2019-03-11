@@ -1,6 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+	<script type="text/javascript"
+	src="js/dygraph.js"></script>
+	<link rel="stylesheet" src="css/dygraph.css" />
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Patient Dashboard</title>
@@ -20,7 +23,7 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -134,10 +137,9 @@
 		var chart = new Chart(ctx, {
 		// The type of chart we want to create
 		type: 'line',
-
 		// The data for our dataset
 		data: {
-				labels: ["Start, Mar 1st", "2", "3", "4", "5", "6", "7"],
+				labels: ["Start: Mar 1st", "2", "3", "4", "5", "6", "7"],
 				datasets: [{
 						label: "Your Pill Taking History",
 						backgroundColor: 'rgb(255, 99, 132)',
@@ -147,30 +149,55 @@
 		},
 
 		// Configuration options go here
-		options: {}
+		options: {
+			scales: {
+				yAxes: [{
+					stacked: true
+				}]
+			}}
 		});
-		</script>
+		</script>	
 	</div>
 
-	<!-- <aside id="colorlib-hero" class="hero">
-		<div class="flexslider">
-			<ul class="slides">
-		   	<li style="background-image: url(images/yearly.png);">
-		   		<div class="overlay"></div>
-		   		<div class="container">
-		   			<div class="row">
-			   			<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12 text-center slider-text">
-			   				<div class="slider-text-inner">
-			   					<h1>Control <strong>Your Recovery</strong></h1>
-									<h2>Let's see how you are doing... </h2>
-			   				</div>
-			   			</div>
-			   		</div>
-		   		</div>
-		   	</li>
-		  	</ul>
-	  	</div>
-	</aside> -->
+	<div id="graphdiv"></div>
+	<script type="text/javascript">
+		g = new Dygraph(
+		
+		// containing div
+		document.getElementById("graphdiv"),
+
+		// CSV or path to a CSV file.
+		"Date,Pills Taken, Amount Prescribed\n" +
+		"2019-05-07,2,2\n" +
+		"2019-05-08,2,2\n" +
+		"2019-05-09,2,2\n" +
+		"2019-05-10,2,2\n" +
+		"2019-05-11,2,2\n" +
+		"2019-05-12,2,2\n" +
+		"2019-05-13,1,2\n" +
+		"2019-05-14,2,2\n" +
+		"2019-05-15,2,2\n" +
+		"2019-05-16,2,2\n" +
+		"2019-05-17,0,2\n" +
+		"2019-05-18,3,2\n" +
+		"2019-05-19,2,2\n" +
+		"2019-05-20,2,2\n" +
+		"2019-05-21,2,2\n" +
+		"2019-05-22,2,2\n" +
+		"2019-05-23,2,2\n" +
+		"2019-05-24,1,2\n" +
+		"2019-05-25,2,2\n" +
+		"2019-05-26,1,2\n" +
+		"2019-05-27,2,2\n" +
+		"2019-05-28,2,2\n" +
+		"2019-05-29,2,2\n" +
+		"2019-05-30,2,2\n" +
+		"2019-05-31,2,2\n" +
+		"2019-06-25,2"
+	
+		);
+	</script>
+
 
 	<div id="colorlib-appointment">
 		<div class="container">
