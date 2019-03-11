@@ -131,6 +131,7 @@
 		<div class="slider-text-inner"><h1><strong>My Dashboard<strong></h1></div>
 		<div style="display:flex">
 		<div><canvas id="myChart"></canvas></div>
+		<div><canvas id="myChart2"></canvas></div>
 		<script src="js/Chart.js"></script>
 		<script>
 		var ctx = document.getElementById('myChart').getContext('2d');
@@ -459,11 +460,32 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 		// Configuration options go here
 		options: {
-			scales: {
-				yAxes: [{
-					stacked: true
+        plugins: {
+            filler: {
+                propagate: false
+            }
+        }
+    }
+		});
+
+		var ctx = document.getElementById('myChart2').getContext('2d');
+		var chart = new Chart(ctx, {
+		// The type of chart we want to create
+		type: 'bar',
+
+		// The data for our dataset
+		data: {
+				labels: ["Start, Mar 1st", "2", "3", "4", "5", "6", "7"],
+				datasets: [{
+						label: "Your Pill Taking History",
+						backgroundColor: 'rgb(255, 99, 132)',
+						borderColor: 'rgb(255, 99, 132)',
+						data: [2, 2, 0, 3, 2, 1, 2],
 				}]
-			}}
+		},
+
+		// Configuration options go here
+		options: {}
 		});
 		</script>	
 	</div>

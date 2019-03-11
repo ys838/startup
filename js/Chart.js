@@ -1,4 +1,4 @@
-<canvas id="myChart" width="400" height="400"></canvas>
+<canvas id="myChart" width="1000" height="500" class="chartjs-render-monitor"></canvas>
 <script>
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
