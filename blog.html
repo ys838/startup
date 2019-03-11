@@ -148,7 +148,13 @@
 		},
 
 		// Configuration options go here
-		options: {}
+		options: {
+        plugins: {
+            filler: {
+                propagate: false
+            }
+        }
+    }
 		});
 
 		var ctx = document.getElementById('myChart2').getContext('2d');
