@@ -42,6 +42,7 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -49,6 +50,7 @@
 
 	</head>
 	<body>
+		<script src="Charter.js"></script>
 
 	<div class="colorlib-loader"></div>
 
@@ -126,9 +128,32 @@
 	<div class="flexslider">
 		<div class="slider-text-inner"><h1><strong>My Dashboard<strong></h1></div>
 		<div style="display:flex"><div style="background:yellow">sdf</div><div style="background:black">sdf</div>
+		<div><canvas id="myChart"></canvas></div>
+		<script src="Chart.js"></script>
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+// The type of chart we want to create
+type: 'line',
+
+// The data for our dataset
+data: {
+		labels: ["January", "February", "March", "April", "May", "June", "July"],
+		datasets: [{
+				label: "My First dataset",
+				backgroundColor: 'rgb(255, 99, 132)',
+				borderColor: 'rgb(255, 99, 132)',
+				data: [0, 10, 5, 2, 20, 30, 45],
+		}]
+},
+
+// Configuration options go here
+options: {}
+});
+</script>
 	</div>
 
-	<aside id="colorlib-hero" class="hero">
+	<!-- <aside id="colorlib-hero" class="hero">
 		<div class="flexslider">
 			<ul class="slides">
 		   	<li style="background-image: url(images/yearly.png);">
@@ -146,7 +171,7 @@
 		   	</li>
 		  	</ul>
 	  	</div>
-	</aside>
+	</aside> -->
 
 	<div id="colorlib-appointment">
 		<div class="container">
