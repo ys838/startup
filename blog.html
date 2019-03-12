@@ -56,7 +56,7 @@
 		var chart = new CanvasJS.Chart("chartContainer", {
 			animationEnabled: true,
 			title:{
-				text: "5 Is Your Normal Behavior!"
+				text: "Social Score"
 			},
 			axisY: {
 				title: "Score"
@@ -75,9 +75,7 @@
 				name: "Sleeping Habits",
 				color: "orange",
 				dataPoints: [
-					{ y: 0, label: "Douglas" },
-					{ y: 3, label: "Stephanie", color: "orange"},
-					{ y: 7, label: "Amy" },
+					{ y: 5, label: "Supporter Score" }
 
 				]
 			},
@@ -87,9 +85,7 @@
 				name: "Eating Habits",
 				color: "green",
 				dataPoints: [
-					{ y: 2, label: "Douglas" },
-					{ y: 3, label: "Stephanie" },
-					{ y: 0, label: "Amy" },
+					{ y: 2, label: "Supporter Score" }
 
 				]
 			},
@@ -99,9 +95,7 @@
 				name: "Mood",
 				color: "blue",
 				dataPoints: [
-					{ y: 6, label: "Douglas" },
-					{ y: 0, label: "Stephanie" },
-					{ y: 4, label: "Amy" },
+					{ y: 6, label: "Supporter Score" }
 
 				]
 			}]
@@ -119,7 +113,7 @@
 				str = str.concat(str1);
 			}
 			str2 = "<strong>" + e.entries[0].dataPoint.label + "</strong> <br/>";
-			str3 = "<span style = \"color:Tomato\">Total: </span><strong>" + total + "</strong><br/>";
+			str3 = "<span style = \"color:Tomato\">Total: </span><strong>" + total + "</strong> / 15 <br/> = "+ (1 - (total / 15));
 			return (str2.concat(str)).concat(str3);
 		}
 
@@ -217,85 +211,60 @@
 		<div style="display:flex">
 		<div><canvas id="myChart"></canvas></div>
 		<div><canvas id="myChart2"></canvas></div>
-		<script src="js/Chart.js"></script>
-		<script>
-		var ctx = document.getElementById('myChart').getContext('2d');
-		var chart = new Chart(ctx, {
-		// The type of chart we want to create
-		type: 'line',
-		// The data for our dataset
-		data: {
-				labels: ["Start: Mar 1st", "2", "3", "4", "5", "6", "7"],
-				datasets: [{
-						label: "Your Pill Taking History",
-						backgroundColor: 'rgb(255, 99, 132)',
-						borderColor: 'rgb(255, 99, 132)',
-						data: [2, 2, 0, 3, 2, 1, 2],
-				}]
-		},
+	</div>
+		<!--############################################################ Begin Window Splitting #####################################################################-->
 
-		// Configuration options go here
-		options: {
-			scales: {
-				yAxes: [{
-					stacked: true
-				}]
-			}}
-		});
+
+
+
+
+		<div id="graphdiv" style="float: left;"></div>
+		<script type="text/javascript">
+			g = new Dygraph(
+
+			// containing div
+			document.getElementById("graphdiv"),
+
+			// CSV or path to a CSV file.
+			"Date,Pills Taken, Amount Prescribed\n" +
+			"2019-05-07,2,2\n" +
+			"2019-05-08,2,2\n" +
+			"2019-05-09,2,2\n" +
+			"2019-05-10,2,2\n" +
+			"2019-05-11,2,2\n" +
+			"2019-05-12,2,2\n" +
+			"2019-05-13,1,2\n" +
+			"2019-05-14,2,2\n" +
+			"2019-05-15,2,2\n" +
+			"2019-05-16,2,2\n" +
+			"2019-05-17,0,2\n" +
+			"2019-05-18,3,2\n" +
+			"2019-05-19,2,2\n" +
+			"2019-05-20,2,2\n" +
+			"2019-05-21,2,2\n" +
+			"2019-05-22,2,2\n" +
+			"2019-05-23,2,2\n" +
+			"2019-05-24,1,2\n" +
+			"2019-05-25,2,2\n" +
+			"2019-05-26,1,2\n" +
+			"2019-05-27,2,2\n" +
+			"2019-05-28,2,2\n" +
+			"2019-05-29,2,2\n" +
+			"2019-05-30,2,2\n" +
+			"2019-05-31,2,2\n" +
+			"2019-06-25,2"
+
+			);
 		</script>
-	</div>
-
-	<div id="graphdiv"></div>
-	<script type="text/javascript">
-		g = new Dygraph(
-
-		// containing div
-		document.getElementById("graphdiv"),
-
-		// CSV or path to a CSV file.
-		"Date,Pills Taken, Amount Prescribed\n" +
-		"2019-05-07,2,2\n" +
-		"2019-05-08,2,2\n" +
-		"2019-05-09,2,2\n" +
-		"2019-05-10,2,2\n" +
-		"2019-05-11,2,2\n" +
-		"2019-05-12,2,2\n" +
-		"2019-05-13,1,2\n" +
-		"2019-05-14,2,2\n" +
-		"2019-05-15,2,2\n" +
-		"2019-05-16,2,2\n" +
-		"2019-05-17,0,2\n" +
-		"2019-05-18,3,2\n" +
-		"2019-05-19,2,2\n" +
-		"2019-05-20,2,2\n" +
-		"2019-05-21,2,2\n" +
-		"2019-05-22,2,2\n" +
-		"2019-05-23,2,2\n" +
-		"2019-05-24,1,2\n" +
-		"2019-05-25,2,2\n" +
-		"2019-05-26,1,2\n" +
-		"2019-05-27,2,2\n" +
-		"2019-05-28,2,2\n" +
-		"2019-05-29,2,2\n" +
-		"2019-05-30,2,2\n" +
-		"2019-05-31,2,2\n" +
-		"2019-06-25,2"
-
-		);
-	</script>
-
-		<div id="chartContainer" style="height: 370px; width: 100%;"></div>
-		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-	<div id="colorlib-appointment">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<h2 class="line-block">Improve your recovery</h2>
-					<p class="line-block"><a href="#" class="btn btn-primary btn-outline btn-cta">See your support review <i class="icon-calendar3"></i></a></p>
-				</div>
-			</div>
 		</div>
-	</div>
+						
+				<div id="chartContainer" style="height: 370px; width: 50%; float: right;"></div>
+					<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
+		<!--############################################################ End Window Splitting #####################################################################-->
+
+
 
 
 	<footer id="colorlib-footer" role="contentinfo">
@@ -455,8 +424,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<div id="page">
 
 
-	<div class="flexslider">
-		<!-- <div class="slider-text-inner"><h1><strong>My Dashboard<strong></h1></div> -->
+	<!-- <div class="flexslider">
 		<div style="display:flex">
 		<div><canvas id="myChart"></canvas></div>
 		<script src="js/Chart.js"></script>
@@ -506,48 +474,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		options: {}
 		});
 		</script>
-	</div>
+	</div> -->
 
-	<div id="graphdiv"></div>
-	<script type="text/javascript">
-		g = new Dygraph(
-
-		// containing div
-		document.getElementById("graphdiv"),
-
-		// CSV or path to a CSV file.
-		"Date,Pills Taken, Amount Prescribed\n" +
-		"2019-05-07,2,2\n" +
-		"2019-05-08,2,2\n" +
-		"2019-05-09,2,2\n" +
-		"2019-05-10,2,2\n" +
-		"2019-05-11,2,2\n" +
-		"2019-05-12,2,2\n" +
-		"2019-05-13,1,2\n" +
-		"2019-05-14,2,2\n" +
-		"2019-05-15,2,2\n" +
-		"2019-05-16,2,2\n" +
-		"2019-05-17,0,2\n" +
-		"2019-05-18,3,2\n" +
-		"2019-05-19,2,2\n" +
-		"2019-05-20,2,2\n" +
-		"2019-05-21,2,2\n" +
-		"2019-05-22,2,2\n" +
-		"2019-05-23,2,2\n" +
-		"2019-05-24,1,2\n" +
-		"2019-05-25,2,2\n" +
-		"2019-05-26,1,2\n" +
-		"2019-05-27,2,2\n" +
-		"2019-05-28,2,2\n" +
-		"2019-05-29,2,2\n" +
-		"2019-05-30,2,2\n" +
-		"2019-05-31,2,2\n" +
-		"2019-06-25,2,2"
-
-		);
-	</script>
-
-	</div>
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
