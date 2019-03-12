@@ -7,7 +7,7 @@
 
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *
 * ======================================================= */
 body {
@@ -43,12 +43,12 @@ body {
       content: ""; }
 
 a {
-  color: #3c97e8;
+  color: #12AECC;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   a:hover, a:active, a:focus {
-    color: #3c97e8;
+    color: #12AECC;
     outline: none;
     text-decoration: none; }
 
@@ -62,15 +62,15 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #3c97e8; }
+  background: #12AECC; }
 
 ::-moz-selection {
   color: #fff;
-  background: #3c97e8; }
+  background: #12AECC; }
 
 ::selection {
   color: #fff;
-  background: #3c97e8; }
+  background: #12AECC; }
 
 .colorlib-nav {
   width: 100%;
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6, figure {
         vertical-align: middle;
         height: 60px;
         font-size: 24px;
-        color: #69cb6a; }
+        color: #F26A4B; }
     .colorlib-nav .num p, .colorlib-nav .loc p {
       padding-left: 80px;
       font-weight: 300; }
@@ -126,14 +126,14 @@ h1, h2, h3, h4, h5, h6, figure {
         text-align: left !important;
         margin-bottom: 20px; } }
     .colorlib-nav #colorlib-logo a {
-      color: #3c97e8;
+      color: #12AECC;
       position: relative; }
       .colorlib-nav #colorlib-logo a span {
-        color: #69cb6a; }
+        color: #F26A4B; }
       .colorlib-nav #colorlib-logo a i {
         font-size: 34px; }
   .colorlib-nav .menu-wrap {
-    background: #3c97e8;
+    background: #12AECC;
     padding: 15px 0;
     width: 100%; }
   .colorlib-nav .menu-1 {
@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6, figure {
         -o-transition: 0.5s;
         transition: 0.5s; }
         .colorlib-nav ul li a:hover, .colorlib-nav ul li a:focus, .colorlib-nav ul li a.active {
-          color: #69cb6a; }
+          color: #F26A4B; }
       .colorlib-nav ul li.has-dropdown {
         position: relative; }
         .colorlib-nav ul li.has-dropdown .dropdown {
@@ -215,9 +215,9 @@ h1, h2, h3, h4, h5, h6, figure {
               .colorlib-nav ul li.has-dropdown .dropdown li a:hover {
                 color: #fff; }
         .colorlib-nav ul li.has-dropdown:hover a, .colorlib-nav ul li.has-dropdown:focus a {
-          color: #69cb6a; }
+          color: #F26A4B; }
       .colorlib-nav ul li.active > a {
-        color: #69cb6a; }
+        color: #F26A4B; }
   .colorlib-nav .btn-cta {
     margin-bottom: 0;
     text-align: right;
@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6, figure {
       padding: 0 !important;
       color: #fff; }
       .colorlib-nav .btn-cta a span {
-        background: #69cb6a;
+        background: #F26A4B;
         padding: 7px 15px;
         display: -moz-inline-stack;
         display: inline-block;
@@ -333,7 +333,7 @@ h1, h2, h3, h4, h5, h6, figure {
           text-transform: uppercase;
           letter-spacing: 2px; }
           #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn:hover {
-            background: #3c97e8 !important;
+            background: #40BED6 !important;
             -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
             -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
             box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important; }
