@@ -134,13 +134,13 @@ body {}
 	background:#009688;
 }
 .nk-green{
-	background:#4CAF50;
+	background:rgb(230, 102, 18);
 }
 .nk-light-green{
-	background:#8BC34A;
+	background:rgb(230, 115, 22);
 }
 .nk-lime{
-	background:#CDDC39;
+	background:rgb(247, 123, 7);
 }
 .nk-yellow{
 	background:#FFEB3B;
@@ -184,7 +184,7 @@ body {}
 /*  2.  Header Top CSS
 /*----------------------------------------*/
 .header-top-area, .footer-copyright-area{
-	background:#40BED6;
+	background:rgb(11, 169, 209);
 }
 .logo-area{
 	padding:14px 0px;
