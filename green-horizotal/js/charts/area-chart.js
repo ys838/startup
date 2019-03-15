@@ -12,8 +12,8 @@
 			datasets: [{
 				label: "My First dataset",
 				fill: false,
-                backgroundColor: '#f2684b',
-				borderColor: '#f2684b',
+                backgroundColor: '#5f3192',
+				borderColor: '#5f3192',
 				data: [0, -20, 20, -20, 20, -20, 20]
             }]
 		},
@@ -57,8 +57,8 @@
 			datasets: [{
 				label: "My First dataset",
 				fill: 'origin',
-                backgroundColor: '#f2684b',
-				borderColor: '#f2684b',
+                backgroundColor: '#5f3192',
+				borderColor: '#5f3192',
 				data: [0, -20, 20, -20]
             }]
 		},
@@ -101,8 +101,8 @@
 			datasets: [{
 				label: "My First dataset",
 				fill: 'start',
-                backgroundColor: '#f2684b',
-				borderColor: '#f2684b',
+                backgroundColor: '#5f3192',
+				borderColor: '#5f3192',
 				data: [0, 10, 20, 30]
             }]
 		},
@@ -147,8 +147,8 @@
 			datasets: [{
 				label: "My First dataset",
 				fill: 'end',
-                backgroundColor: '#f2684b',
-				borderColor: '#f2684b',
+                backgroundColor: '#5f3192',
+				borderColor: '#5f3192',
 				data: [100, 90, 70, 60]
             }]
 		},
