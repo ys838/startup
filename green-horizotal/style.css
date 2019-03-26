@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 a {transition: all 0.3s ease 0s;text-decoration:none;}
 a:hover {
-  color: #40BED6;
+  color: #1F145C;
   text-decoration: none;
 }
 a:active, a:hover, a:focus {
@@ -184,7 +184,7 @@ body {}
 /*  2.  Header Top CSS
 /*----------------------------------------*/
 .header-top-area, .footer-copyright-area{
-	background:rgb(11, 169, 209);
+	background:#1F145C;
 }
 .logo-area{
 	padding:14px 0px;
@@ -1028,7 +1028,7 @@ ul.notika-menu-wrap li a{
     margin: 5px 0px;
 }
 .skill .progress {
-    background-color: #f0f0f0;
+    background-color: #1F145C;
     border-radius: 0;
     box-shadow: none;
     height: 5px;
