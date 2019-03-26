@@ -1,1 +1,198 @@
 1F145C Anchor Purple
+
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="notika-chat-list notika-shadow mg-t-30 tb-res-ds-n dk-res-ds">
+                        <div class="realtime-ctn">
+                            <div class="realtime-title">
+                                <h2>Chat with your Rep: <b>Claudia G.</b></h2>
+                            </div>
+                        </div>
+                        <div class="card-box">
+                            <div class="chat-conversation">
+                                <div class="widgets-chat-scrollbar">
+                                    <ul class="conversation-list">
+                                        <li class="clearfix odd">
+                                            <div class="chat-avatar">
+                                            <img src="../images/abbey.jpg" width="60" height="60" alt="Female" />
+                                                <i>09:22</i>
+                                            </div>
+                                            <div class="conversation-text">
+                                                <div class="ctext-wrap chat-widgets-cn">
+                                                    <i>Abbey</i>
+                                                    <p>
+                                                        Hi Claudia, how am I doing?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="chat-avatar">
+                                                <img src="../images/claudia.jpg" width="60" height="60" alt="male" />
+                                                <i>09:24</i>
+                                            </div>
+                                            <div class="conversation-text">
+                                                <div class="ctext-wrap">
+                                                    <i>Claudia G.</i>
+                                                    <p>
+                                                        Hello Abbey Thank you for contacting us. According to your pill intake, you are doing well.
+                                                        According to your supporter report, you are not eating like you normally do. Would you like
+                                                        more details?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix odd">
+                                            <div class="chat-avatar">
+                                                <img src="../images/abbey.jpg" alt="female">
+                                                <i>09:25</i>
+                                            </div>
+                                            <div class="conversation-text">
+                                                <div class="ctext-wrap chat-widgets-cn">
+                                                    <i>Abbey</i>
+                                                    <p>
+                                                        Yes please Claudia!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="chat-avatar">
+                                                <img src="../images/claudia.jpg" alt="male">
+                                                <i>09:27</i>
+                                            </div>
+                                            <div class="conversation-text">
+                                                <div class="ctext-wrap">
+                                                    <i>Claudia G.</i>
+                                                    <p>
+                                                        Great. You took three pills after only taking one the day before. This is a common misconception,
+                                                        you should not in any case take more than recommended. The medication you are on is proven to
+                                                        cause dependence very rapidly. <br>
+                                                        As for your mood score, you should consider our recommendations, and eat your favorite, fresh foods.
+                                                        Is there any reason you think you are not eating well?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix odd">
+                                            <div class="chat-avatar">
+                                            <img src="../images/abbey.jpg" width="60" height="60" alt="Female" />
+                                                <i>09:29</i>
+                                            </div>
+                                            <div class="conversation-text">
+                                                <div class="ctext-wrap chat-widgets-cn">
+                                                    <i>Abbey</i>
+                                                    <p>
+                                                        Yes, I think that getting groceries has been difficult.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="chat-avatar">
+                                                <img src="../images/claudia.jpg" alt="male">
+                                                <i>09:27</i>
+                                            </div>
+                                            <div class="conversation-text">
+                                                <div class="ctext-wrap">
+                                                    <i>Claudia G.</i>
+                                                    <p>
+                                                        Thank you for sharing! Would you like me to notify your support group or order you groceries?
+                                                        Ordering you groceries would cost ($10.59) based on your location.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix odd">
+                                            <div class="chat-avatar">
+                                                <img src="../images/abbey.jpg" alt="female">
+                                                <i>09:29</i>
+                                            </div>
+                                            <div class="conversation-text">
+                                                <div class="ctext-wrap chat-widgets-cn">
+                                                    <i>Abbey</i>
+                                                    <p>
+                                                        No problem, I will notify my supporters.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="clearfix">
+                                            <div class="chat-avatar">
+                                                <img src="../images/claudia.jpg" alt="male">
+                                                <i>09:27</i>
+                                            </div>
+                                            <div class="conversation-text">
+                                                <div class="ctext-wrap">
+                                                    <i>Claudia G.</i>
+                                                    <p>
+                                                        Great, have a great day if there is nothing else I can assist you with.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="chat-widget-input">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-sm-12 col-xs-12 chat-inputbar">
+                                            <div class="form-group todo-flex">
+                                                <div class="nk-int-st">
+                                                    <input type="text" class="form-control chat-input" placeholder="Enter your text">
+                                                </div>
+                                                <div class="chat-send">
+                                                    <button type="submit" class="btn btn-md btn-primary btn-block notika-chat-btn">Send</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div class="add-todo-list notika-shadow mg-t-30">
+                        <div class="realtime-ctn">
+                            <div class="realtime-title">
+                                <h2>Reccomendations to improve your <b><i>Eating Score</i></b> </h2>
+                            </div>
+                        </div>
+                        <div class="card-box">
+                            <div class="todoapp">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-6 col-sm-6 col-xs-12">
+                                        <h4 id="todo-message">I will consider <span id="todo-remaining"></span> of <span id="todo-total"></span> remaining</h4>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="notika-todo-btn">
+                                            <a href="#" class="pull-right btn btn-primary btn-sm" id="btn-archive">Archive</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="notika-todo-scrollbar">
+                                    <ul class="list-group no-margn todo-list" id="todo-list"></ul>
+                                </div>
+                                <div id="todo-form">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-sm-12 col-xs-12 todo-inputbar">
+                                            <div class="form-group todo-flex">
+                                                <div class="nk-int-st">
+                                                    <input type="text" id="todo-input-text" name="todo-input-text" class="form-control" placeholder="Add new todo">
+                                                </div>
+                                                <div class="todo-send">
+                                                    <button class="btn-primary btn-md btn-block btn notika-add-todo" type="button" id="todo-btn-submit">Add</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    
+                </div>
+
+            </div>
+    </div>
+
+    
