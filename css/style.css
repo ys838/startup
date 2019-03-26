@@ -43,12 +43,12 @@ body {
       content: ""; }
 
 a {
-  color: #12AECC;
+  color: #1F145C;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   a:hover, a:active, a:focus {
-    color: #12AECC;
+    color: #1F145C;
     outline: none;
     text-decoration: none; }
 
@@ -62,15 +62,15 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #12AECC; }
+  background: #1F145C; }
 
 ::-moz-selection {
   color: #fff;
-  background: #12AECC; }
+  background: #1F145C; }
 
 ::selection {
   color: #fff;
-  background: #12AECC; }
+  background: #1F145C; }
 
 .colorlib-nav {
   width: 100%;
@@ -126,14 +126,14 @@ h1, h2, h3, h4, h5, h6, figure {
         text-align: left !important;
         margin-bottom: 20px; } }
     .colorlib-nav #colorlib-logo a {
-      color: #12AECC;
+      color: #1F145C;
       position: relative; }
       .colorlib-nav #colorlib-logo a span {
         color: #F26A4B; }
       .colorlib-nav #colorlib-logo a i {
         font-size: 34px; }
   .colorlib-nav .menu-wrap {
-    background: #12AECC;
+    background: #1F145C;
     padding: 15px 0;
     width: 100%; }
   .colorlib-nav .menu-1 {
@@ -333,7 +333,7 @@ h1, h2, h3, h4, h5, h6, figure {
           text-transform: uppercase;
           letter-spacing: 2px; }
           #colorlib-hero .flexslider .slider-text > .slider-text-inner .btn:hover {
-            background: #40BED6 !important;
+            background: #1F145C !important;
             -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
             -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
             box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important; }
@@ -410,7 +410,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
   width: 25%;
   display: inline-block;
-  background: #40BED6;
+  background: #1F145C;
   border-right: 1px solid rgba(0, 0, 0, 0.1); }
   @media screen and (max-width: 768px) {
     .intro-grid {

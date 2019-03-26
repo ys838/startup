@@ -42,10 +42,10 @@
 					range: true,
 					values: [27, 67],
 					slide: function(event, ui) {
-						$("#sales").val("$" + ui.values[0] + " - $" + ui.values[1]);
+						$("#sales").val(ui.values[0] + " - $" + ui.values[1]);
 					}
 				});
-				$("#sales").val( "$" + $("#slider7").slider("values", 0) + " - $" + $("#slider7").slider("values", 1));
+				$("#sales").val(  + $("#slider7").slider("values", 0) + " - $" + $("#slider7").slider("values", 1));
  
 				$("#eq > .sliderv-wrapper").each(function() {
 					var value = parseInt($(this).text(), 10);
@@ -67,7 +67,7 @@
 					});
 				});		
 				
-				var initialYear = 1980;
+				var initialYear = 19;
 				var yearTooltip = function(event, ui) {
 					var curYear = ui.value || initialYear
 					var yeartip = '<span class="slider-tip">' + curYear + '</span>';
@@ -77,8 +77,8 @@
 				$("#slider10").slider({
 					value: initialYear,
 					range: "min",
-					min: 1950,
-					max: 2020,
+					min: 0,
+					max: 25,
 					step: 1,
 					create: yearTooltip,
 					slide: yearTooltip
@@ -88,15 +88,15 @@
  
 				$('#slider8').slider({
 					range: true,
-					values: [500, 1500],
-					min: 10,
-					max: 2000,
-					step: 10,
+					values: [0, 5],
+					min: 0,
+					max: 10,
+					step: 1,
 					slide: function(event, ui) { 
-						$("#budget").val("$" + ui.values[0] + " - $" + ui.values[1]);
+						$("#budget").val("From " + ui.values[0] + " to " + ui.values[1]);
 					}			
 				});
-				$("#budget").val("$" + $("#slider8").slider("values", 0) + " - $" + $("#slider8").slider("values", 1));
+				$("#budget").val("From " + $("#slider8").slider("values", 0) + " to " + $("#slider8").slider("values", 1));
 				
 				
 		
@@ -114,16 +114,16 @@
 
 				$( "#slider2" ).slider({
 					range: "min",
-					value: 140,
+					value: 5,
 					min: 1,
-					max: 800,
+					max: 10,
 					slide: function(event, ui) {
-						$("#amountp").val("$" + ui.value);
+						$("#amountp").val(ui.value);
 					}
 				});
 				
 				$("#amountp").val( 
-					"$" + $("#slider2").slider("value") 
+					  $("#slider2").slider("value") 
 				);
 				
 				$("#slider3").slider({
