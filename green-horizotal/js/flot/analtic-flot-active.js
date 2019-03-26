@@ -192,9 +192,9 @@
             label: "Consumed",
             data: data2,
             xaxis: 2,
-            color: "#03A9F4",
+            color: "#1F145C",
             points: {
-                fillColor: "#03A9F4",
+                fillColor: "#1F145C",
                 show: !0,
                 radius: 2
             },
