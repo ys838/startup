@@ -39,7 +39,7 @@ body #timeline-wrapper .timeline-top .top-year {
   width: 80px;
   height: 80px;
   border-radius: 40px;
-  background-color: #03a9f4;
+  background-color: #1F145C;
   color: #fff;
   line-height: 80px;
   text-align: center;
@@ -58,7 +58,7 @@ body #timeline-wrapper .timeline-block:after {
   position: absolute;
   width: 4px;
   height: 100%;
-  background-color: #03a9f4;
+  background-color: #1F145C;
   left: 50%;
   top: 0;
   margin-left: -2px;
@@ -91,7 +91,7 @@ body #timeline-wrapper .timeline-block .timeline-events .l-event:after {
   height: 60px;
   z-index: 3;
   border-radius: 30px;
-  background: #03a9f4;
+  background: #1F145C;
 }
 body #timeline-wrapper .timeline-block .timeline-events .l-event .event-body:before {
   position: absolute;
@@ -137,7 +137,7 @@ body #timeline-wrapper .timeline-block .timeline-events .r-event:after {
   height: 60px;
   z-index: 3;
   border-radius: 30px;
-  background: #03a9f4;
+  background: #1F145C;
 }
 body #timeline-wrapper .timeline-block .timeline-events .r-event .event-body {
   float: right;
@@ -222,7 +222,7 @@ body #timeline-wrapper .timeline-block .event .event-body .person-image img {
     top: 0;
     width: 6px;
     height: 100%;
-    background-color: #03a9f4;
+    background-color: #1F145C;
     left: -30%;
     border-radius: 3px;
     box-shadow: 1px 1px 1px #fff;
@@ -233,7 +233,7 @@ body #timeline-wrapper .timeline-block .event .event-body .person-image img {
     top: 0;
     width: 6px;
     height: 100%;
-    background-color: #03a9f4;
+    background-color: #1F145C;
     right: -30%;
     border-radius: 3px;
     box-shadow: -1px 1px 1px #fff;
