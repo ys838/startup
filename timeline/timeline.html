@@ -14,15 +14,9 @@
 
 <body>
   <header>
-  <div class="container" style="background-color:#1F145C;width:100%;height:109px">
+  <div class="container" style="background-color:#1F145C;width:100%;height:120px">
     <h1 class="text-center text-danger grad-over">My <img src="../images/anchorLogo.PNG" width = "250" height = "80"> Recovery Journey</h1>
-  </div><br>
-  <script>
-  function myFunction() {
-    document.getElementById('dialogue').style.display="none";
-    // $('dialogue').removeClass('invisible');
-  }
-  </script>
+  </div><br><br>
 
 </header><br>
   <section id="timeline-wrapper">
@@ -41,8 +35,8 @@
 <div class="event-content">
 <h5 class="text-header text-left">Checked out of Mount Sinai Hospital </h5>
 <span class="text-muted text-left" style="display:block; margin: 0"><small>19 March 2019</small></span>
-<br>
-                <div class="text-muted text-left">Surgery type: Arm Surgery<br>Primary Doctor: Dr. Mary Green
+<br><br>
+                <div class="text-muted text-left" style="padding-left:20px">Surgery type: Arm Surgery<br>Primary Doctor: Dr. Mary Green
                   <br>24 HR Nurse Line:&nbsp;(123)456-7890<br>Prescribed Medication: Oxycontin 50mg Instant Release
 <!-- <cite class="text-muted text-right text-bold">for Alex</cite> -->
 </div>
@@ -119,10 +113,10 @@
 <h5 class="text-header text-left">Douglas, Stephanie and Amy have finished their ratings for you this week! </h5>
 <span class="text-muted text-left" style="display:block; margin: 0"><small>31 March 2019</small></span>
 <br><br>
-                <div class="text-muted text-left">Read it here! <br>
+                <button><div class="text-muted text-left" style="color:#1f145c">Read it here! <br>
 <!-- <cite class="text-muted text-right text-bold">together with Amy</cite> -->
+</div></button>
 </div>
-                </div>
 </div>
             </div><!-- end of left event <-->
               <div class="clearfix"></div>
@@ -151,7 +145,7 @@
           <h5 class="text-header text-left">First Post-Surgery Appointment with Dr. Green </h5>
           <span class="text-muted text-left" style="display:block; margin: 0"><small>19 April 2019</small></span>
           <br><br>
-                <div class="text-muted text-left">Address: 1468 Madison Ave, New York, NY 10029 <br>
+                <div class="text-muted text-left" style="padding-left:20px">Address: 1468 Madison Ave, New York, NY 10029 <br>
           <!-- <cite class="text-muted text-right text-bold">together with Amy</cite> -->
           </div>
                 </div>
@@ -168,14 +162,29 @@
           <h4 class="text-header text-left">TODAY </h4>
           <span class="text-muted text-left" style="display:block; margin: 0"><small>7 April 2019</small></span>
           <br><br>
-                <a class="text-muted text-left" href="../green-horizotal/index-3.html" style="padding-left:20px">Click here to see how you're doing! <br><br>
-          </a>
+                <button><a class="text-muted text-left" href="../green-horizotal/index-3.html" style="color:#1f145c;">Click here to see how you're doing! <br><br>
+          </a></button>
                 </div>
           </div>
             </div>
 
             <div class="row"></div>
-            <div class="event l-event col-md-6 col-sm-6 col-xs-8 "><span class="thumb fa fa-smile-o"></span>
+            <div class="event l-event col-md-6 col-sm-6 col-xs-8 ">
+              <span class="thumb fa fa-plus" id="plus-icon" onclick="javascript:document.getElementById('dialogue').style.display='inline-block';"></span>
+             <div class=" event-body" style="display:none;" id="dialogue">
+                <div class="person-image pull-left "><img src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-512.png" alt="person" /></div>
+            <div class="event-content">
+            <h5 class="text-header text-left" style="color:#1f145c">Edit Your Event Title <span class="fa fa-pencil"></span></h5>
+            <span class="text-muted text-left" style="display:block; margin: 0"><small>19 April 2019</small></span>
+            <br><br>
+                <blockquote class="text-muted text-left">Start your event here... <br>
+            </blockquote>
+                </div>
+            </div>
+            </div>
+
+            <div class="row"></div>
+            <div class="event r-event col-md-6 col-sm-6 col-xs-8 "><span class="thumb fa fa-smile-o"></span>
               <div class=" event-body">
                 <div class="person-image pull-left "><img src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-512.png" alt="person" /></div>
           <div class="event-content">
@@ -189,22 +198,6 @@
           </div>
             </div><!-- end of left event <-->
               <div class="clearfix"></div>
-
-            <div class="row"></div>
-            <div class="event r-event col-md-6 col-sm-6 col-xs-8 ">
-              <span class="thumb fa fa-plus" id="plus-icon" onclick="javascript:document.getElementById('dialogue').style.display='inline-block';"></span>
-             <div class=" event-body" style="display:none;" id="dialogue">
-                <div class="person-image pull-left "><img src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-512.png" alt="person" /></div>
-          <div class="event-content">
-          <h5 class="text-header text-left" style="color:#ff9900">Add Your Own Event </h5>
-          <span class="text-muted text-left" style="display:block; margin: 0"><small>19 April 2019</small></span>
-          <br><br>
-                <blockquote class="text-muted text-left">Redeemed 2 x $10 Amazon giftcards <br>
-          <cite class="text-muted text-right text-bold">for you and Stephanie</cite>
-          </blockquote>
-                </div>
-          </div>
-            </div>
 
               <div class="clearfix"></div>
             </-->
