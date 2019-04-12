@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6, figure {
         vertical-align: middle;
         height: 60px;
         font-size: 24px;
-        color: #F26A4B; }
+        color: #b12e53; }
     .colorlib-nav .num p, .colorlib-nav .loc p {
       padding-left: 80px;
       font-weight: 300; }
@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6, figure {
       color: #1F145C;
       position: relative; }
       .colorlib-nav #colorlib-logo a span {
-        color: #F26A4B; }
+        color: #b12e53; }
       .colorlib-nav #colorlib-logo a i {
         font-size: 34px; }
   .colorlib-nav .menu-wrap {
@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6, figure {
         -o-transition: 0.5s;
         transition: 0.5s; }
         .colorlib-nav ul li a:hover, .colorlib-nav ul li a:focus, .colorlib-nav ul li a.active {
-          color: #F26A4B; }
+          color: #b12e53; }
       .colorlib-nav ul li.has-dropdown {
         position: relative; }
         .colorlib-nav ul li.has-dropdown .dropdown {
@@ -215,9 +215,9 @@ h1, h2, h3, h4, h5, h6, figure {
               .colorlib-nav ul li.has-dropdown .dropdown li a:hover {
                 color: #fff; }
         .colorlib-nav ul li.has-dropdown:hover a, .colorlib-nav ul li.has-dropdown:focus a {
-          color: #F26A4B; }
+          color: #b12e53; }
       .colorlib-nav ul li.active > a {
-        color: #F26A4B; }
+        color: #b12e53; }
   .colorlib-nav .btn-cta {
     margin-bottom: 0;
     text-align: right;
@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6, figure {
       padding: 0 !important;
       color: #fff; }
       .colorlib-nav .btn-cta a span {
-        background: #F26A4B;
+        background: #b12e53;
         padding: 7px 15px;
         display: -moz-inline-stack;
         display: inline-block;
