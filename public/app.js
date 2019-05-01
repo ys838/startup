@@ -16,24 +16,41 @@ document.getElementById('anchorForm').addEventListener('submit',submitForm);
 //submit form
 function submitForm(e){
     e.preventDefault();
-    // console.log(123);
+    console.log(123);
     //get values
-    var name = getInputVal('name');
-    var message = getInputVal('message');
+    // var name = getInputVal('name');
+    // var message = getInputVal('message');
+    var amountp = getInputVal('amountp');
+    var bedrooms = getInputVal('bedrooms');
+    console.log(amountp);
+    //update database
+    updateRating(amountp,bedrooms);
+
     // console.log(name);
 
     // save message
-    saveMessage(name,message);
+    // saveMessage(name,message);
     // show alert
-    document.querySelector('.alert').style.display = 'block';
+    // document.querySelector('.alert').style.display = 'block';
     // hide alert after 3 sec
-    setTimeout(function(){
-        document.querySelector('.alert').style.display = 'none';
-    },3000);
+    // setTimeout(function(){
+    //     document.querySelector('.alert').style.display = 'none';
+    // },3000);
 }
 //function to get form values
 function getInputVal(id){
     return document.getElementById(id).value;
+}
+
+function updateRating(amountp,bedrooms){
+    var anchorsRef = firebase.database().ref("anchors/Douglas");
+    console.log(amountp);
+
+
+    anchorsRef.update ({
+        "Sleep": amountp
+        });
+
 }
 
 function saveMessage(name,message){

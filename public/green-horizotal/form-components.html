@@ -397,6 +397,7 @@
 	</div>
 	<!-- Breadcomb area End-->
     <!-- Form Element area Start-->
+    <form id="anchorForm">
     <div class="form-element-area">
         <div class="container">
             <div class="row">
@@ -424,7 +425,7 @@
 										<label for="bedrooms">Rate David's Appetite</label>
 										<input type="text" id="bedrooms" class="slider-input">
 									</div>
-									<div class="slider-wrapper blue-slider">
+									<div class="slider-wrapper yellow-slider">
 										<div id="slider3"></div>
 									</div>
 								</div>
@@ -460,6 +461,7 @@
 			</div>
         </div>
     </div>
+
     <!-- Form Element area End-->
     <!-- Summernote area Start-->
     <div class="summernote-area">
@@ -531,7 +533,7 @@
                                             </div>
                                         </div>
                                     </div>
-    <a href="../index.html" class = "btn btn-default btn-icon-notika"><i class="notika-icon notika-refresh"></i>                           <h3>Submit</h3>                            </a>
+    
 
                                 </div>
                             </div>
@@ -540,7 +542,9 @@
             </div>
         </div>
     </div>
-
+    <button type="submit" class = "btn btn-default btn-icon-notika">Submit</button>
+    <a href="../index.html" class = "btn btn-default btn-icon-notika"><i class="notika-icon notika-refresh"></i><h3>Submit</h3> </a>
+</form>
     <!-- Start Footer area-->
     <div class="footer-copyright-area">
         <div class="container">
@@ -559,6 +563,9 @@
         ============================================ -->
         
     <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+    <script src="../app.js"></script>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
     <script>
         // Initialize Firebase
         var config = {
@@ -570,7 +577,7 @@
         messagingSenderId: "1060146172993"
         };
         firebase.initializeApp(config);
-    </script>
+    </script> -->
 
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <!-- bootstrap JS
