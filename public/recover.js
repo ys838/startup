@@ -21,6 +21,7 @@ function submitForm(e){
     // var message = getInputVal('message');
     var input1 = document.getElementById('sleep');
     document.getElementById('chart').style.opacity = 1;
+    window.location.reload();
 }
 
 //retrieve data from db on patient's page
@@ -30,6 +31,7 @@ sleepRef.on("value",function(snapshot){
     console.log(sleep);
     var input1 = document.getElementById('sleep');
     input1.setAttribute("data-rel","88");
+    
 });
 console.log(sleep);
 
