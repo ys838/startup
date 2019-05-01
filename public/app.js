@@ -67,7 +67,11 @@ function saveMessage(name,message){
     });
 }
 
-  
+//retrieve data from db on patient's page
+var recoverRef = firebase.database().ref("anchors/Douglas/Sleep");
+recoverRef.on("value",function(snapshot){
+    console.log(snapshot.val());
+});
 
 document.addEventListener("DOMContentLoaded", event =>{
     const app = firebase.app();

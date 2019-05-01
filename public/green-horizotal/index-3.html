@@ -619,6 +619,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <form id="stats">
                     <div class="email-statis-inner notika-shadow">
                         <div class="email-ctn-round">
                             <div class="email-rdn-hd">
@@ -626,7 +627,7 @@
 							</div>
                             <div class="email-statis-wrap">
                                 <div class="email-round-nock">
-                                    <input type="text" class="knob" value="0" data-rel="55" data-linecap="round" data-width="130" data-bgcolor="#E4E4E4" data-fgcolor="#5f3192" data-thickness=".10" data-readonly="true">
+                                    <input type="text" id="sleep" class="knob" value="0" data-rel="55" data-linecap="round" data-width="130" data-bgcolor="#E4E4E4" data-fgcolor="#5f3192" data-thickness=".10" data-readonly="true">
                                 </div>
                                 <div class="email-ctn-nock">
                                     <p>Optimal Behavior Score</p>
@@ -660,6 +661,7 @@
                             </div>
                         </div>
                     </div>
+                </form>
                 </div>
                 <div class="ongoing-task-inner notika-shadow mg-t-30">
                         <div class="realtime-ctn">
@@ -733,7 +735,7 @@
         </div>
     </div>
     <div class="sale-statistic-area">
-        <div class="container">
+        <div class="container" style="display:none;">
             <div class="row">
                     <div class="visitor-sv-tm-int sm-res-mg-t-30 tb-res-mg-t-30 tb-res-ds-n dk-res-ds">
                         <div class="contact-hd mg-bt-ant-inner">
@@ -781,7 +783,10 @@
     </div>
     <!-- End Footer area-->
     <!-- jquery
-		============================================ -->
+        ============================================ -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+    <script src="../recover.js"></script>
+
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <!-- flot JS
     ============================================ -->
