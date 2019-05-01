@@ -47,7 +47,8 @@ function getInputVal(id){
 }
 
 function updateRating(energy,appetite,mood,times){
-    var anchorsRef = firebase.database().ref("anchors/Douglas");
+    var anchorName = sessionStorage.getItem("globalVariable")
+    var anchorsRef = firebase.database().ref("anchors/"+anchorName);
     // console.log(energy);
 
     anchorsRef.update ({

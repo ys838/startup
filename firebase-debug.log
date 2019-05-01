@@ -1,22 +1,25 @@
-[debug] [2019-05-01T20:46:15.615Z] ----------------------------------------------------------------------
-[debug] [2019-05-01T20:46:15.623Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Emmanuel\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
-[debug] [2019-05-01T20:46:15.623Z] CLI Version:   6.7.1
-[debug] [2019-05-01T20:46:15.624Z] Platform:      win32
-[debug] [2019-05-01T20:46:15.624Z] Node Version:  v8.11.4
-[debug] [2019-05-01T20:46:15.626Z] Time:          Wed May 01 2019 16:46:15 GMT-0400 (Eastern Daylight Time)
-[debug] [2019-05-01T20:46:15.627Z] ----------------------------------------------------------------------
+[debug] [2019-05-01T20:51:27.664Z] ----------------------------------------------------------------------
+[debug] [2019-05-01T20:51:27.672Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Emmanuel\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-05-01T20:51:27.673Z] CLI Version:   6.7.1
+[debug] [2019-05-01T20:51:27.673Z] Platform:      win32
+[debug] [2019-05-01T20:51:27.673Z] Node Version:  v8.11.4
+[debug] [2019-05-01T20:51:27.675Z] Time:          Wed May 01 2019 16:51:27 GMT-0400 (Eastern Daylight Time)
+[debug] [2019-05-01T20:51:27.676Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-05-01T20:46:15.664Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-05-01T20:46:15.666Z] > authorizing via signed-in user
-[debug] [2019-05-01T20:46:15.666Z] [iam] checking project anchor-me for permissions ["firebase.projects.get"]
-[debug] [2019-05-01T20:46:15.672Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/anchor-me:testIamPermissions  
+[debug] [2019-05-01T20:51:27.705Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-05-01T20:51:27.706Z] > authorizing via signed-in user
+[debug] [2019-05-01T20:51:27.707Z] [iam] checking project anchor-me for permissions ["firebase.projects.get"]
+[debug] [2019-05-01T20:51:27.712Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/anchor-me:testIamPermissions  
 
-[debug] [2019-05-01T20:46:16.033Z] <<< HTTP RESPONSE 200
-[debug] [2019-05-01T20:46:16.061Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/anchor-me  
+[debug] [2019-05-01T20:51:28.066Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-01T20:51:28.094Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/anchor-me  
  
-[debug] [2019-05-01T20:46:16.286Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-01T20:51:28.324Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from 'C:\Users\Emmanuel\Documents\__Spring2019\website\DEMOstartup\startup'...
 [info] 
-[debug] [2019-05-01T20:46:16.312Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1060146172993/clients/_:getWebAppConfig  
+[debug] [2019-05-01T20:51:28.363Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1060146172993/clients/_:getWebAppConfig  
  
+[debug] [2019-05-01T20:51:28.716Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
