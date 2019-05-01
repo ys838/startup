@@ -67,7 +67,7 @@
 					});
 				});		
 				
-				var initialYear = 19;
+				var initialYear = 15;
 				var yearTooltip = function(event, ui) {
 					var curYear = ui.value || initialYear
 					var yeartip = '<span class="slider-tip">' + curYear + '</span>';
@@ -75,29 +75,32 @@
 				}
 				
 				$("#slider10").slider({
-					value: initialYear,
+					value: 0,
 					range: "min",
 					min: 0,
-					max: 25,
-					step: 1,
-					create: yearTooltip,
-					slide: yearTooltip
+					max: 10,
+					slide: function(event,ui){
+						$("#amounts").val(ui.value);
+					}
 				});	
+				$("#amounts").val(
+					$("#slider10").slider("value")
+				);
 				
 				
  
 				$('#slider8').slider({
-					range: true,
-					values: [0, 5],
+					range: "min",
+					value: 0,
 					min: 0,
 					max: 10,
-					step: 1,
 					slide: function(event, ui) { 
-						$("#budget").val("From " + ui.values[0] + " to " + ui.values[1]);
+						$("#budget").val(ui.value);
 					}			
 				});
-				$("#budget").val("From " + $("#slider8").slider("values", 0) + " to " + $("#slider8").slider("values", 1));
-				
+				$("#budget").val( 
+					$("#slider8").slider("value") 
+			  	);
 				
 		
 				$("#slider").slider({
@@ -114,8 +117,8 @@
 
 				$( "#slider2" ).slider({
 					range: "min",
-					value: 5,
-					min: 1,
+					value: 0,
+					min: 0,
 					max: 10,
 					slide: function(event, ui) {
 						$("#amountp").val(ui.value);
@@ -127,10 +130,10 @@
 				);
 				
 				$("#slider3").slider({
-					range: "max",
-					min: 1,
+					range: "min",
+					min: 0,
 					max: 10,
-					value: 2,
+					value: 0,
 					slide: function(event, ui) {
 						$("#bedrooms").val(ui.value);
 					}

@@ -16,39 +16,45 @@ document.getElementById('anchorForm').addEventListener('submit',submitForm);
 //submit form
 function submitForm(e){
     e.preventDefault();
-    console.log(123);
+    // console.log(123);
     //get values
     // var name = getInputVal('name');
     // var message = getInputVal('message');
-    var amountp = getInputVal('amountp');
-    var bedrooms = getInputVal('bedrooms');
-    console.log(amountp);
+    var energy = getInputVal('amountp');
+    var appetite = getInputVal('bedrooms');
+    var mood = getInputVal('budget');
+    var times = getInputVal('amounts');
+    console.log(energy,appetite,mood,times);
     //update database
-    updateRating(amountp,bedrooms);
+    updateRating(energy,appetite,mood,times);
 
     // console.log(name);
 
     // save message
     // saveMessage(name,message);
     // show alert
-    // document.querySelector('.alert').style.display = 'block';
+    console.log(123);
+    document.getElementById('alert').style.display = 'block';
+    // document.querySelector('.alert').style.display = 'none';
     // hide alert after 3 sec
-    // setTimeout(function(){
-    //     document.querySelector('.alert').style.display = 'none';
-    // },3000);
+    setTimeout(function(){
+        document.getElementById('alert').style.display = 'none';
+    },3000);
 }
 //function to get form values
 function getInputVal(id){
     return document.getElementById(id).value;
 }
 
-function updateRating(amountp,bedrooms){
+function updateRating(energy,appetite,mood,times){
     var anchorsRef = firebase.database().ref("anchors/Douglas");
-    console.log(amountp);
-
+    // console.log(energy);
 
     anchorsRef.update ({
-        "Sleep": amountp
+        "Sleep": energy,
+        "Eat": appetite,
+        "Mood": mood,
+        "Meet": times
         });
 
 }

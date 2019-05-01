@@ -78,6 +78,17 @@
     <!-- modernizr JS
 		============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <style>
+            .alert{
+              text-align:center;
+              padding:10px;
+              background:#79c879;
+              color:#fff;
+              margin-bottom:10px;
+              font-size:16px;
+              display:none;
+            }
+    </style>
 </head>
 
 <body>
@@ -395,7 +406,8 @@
 			</div>
 		</div>
 	</div>
-	<!-- Breadcomb area End-->
+    <!-- Breadcomb area End-->
+    <div class='alert' id="alert">Your response has been recorded. Thank you for supporting David!</div>
     <!-- Form Element area Start-->
     <form id="anchorForm">
     <div class="form-element-area">
@@ -430,7 +442,8 @@
 									</div>
 								</div>
 							</div>
-						</div>
+                        </div>
+                        
 						<div class="row">
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 								<div class="themesaller-forms mg-t-30">
@@ -449,7 +462,7 @@
 										<label for="amounts">How Many Times Have you Talked With David (since last review)?</label>
 										<input type="text" id="amounts" class="slider-input">
 									</div>
-									<div class="slider-wrapper">
+									<div class="slider-wrapper puprle-slider">
 										<div id="slider10"></div>
 									</div>
 								</div>
