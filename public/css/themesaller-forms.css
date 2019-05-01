@@ -5,9 +5,9 @@
 -------------------------------------------------- 
 */
 
-/* Roboto google font import 
+/* Poppins google font import 
 --------------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(http://fonts.googleapis.com/css?family=Poppins:400,300);
 
 html, body{
 	border: 0;
@@ -40,7 +40,7 @@ body{
 }
 
 .themesaller-forms {
-	font-family:  "Roboto", Arial, Helvetica, sans-serif;
+	font-family:  "Poppins", Arial, Helvetica, sans-serif;
 	line-height: 1.231;
 	font-weight: 400;
 	font-size: 14px;
@@ -115,9 +115,9 @@ body{
 }
 	
 .themesaller-forms .form-header h4 { 
-	font-family:"Roboto", Arial, Helvetica, sans-serif;
+	font-family:"Poppins", Arial, Helvetica, sans-serif;
 color: #fff;
-font-family: "Roboto",Arial,Helvetica,sans-serif;
+font-family: "Poppins",Arial,Helvetica,sans-serif;
 font-size: 30px;
 margin: 0 auto;
 text-align: center;
@@ -216,7 +216,7 @@ text-align: center;
 .themesaller-forms textarea {
 	margin: 0;  
 	font-size: 14px;
-	font-family:  "Roboto", Arial, Helvetica, sans-serif;
+	font-family:  "Poppins", Arial, Helvetica, sans-serif;
 	font-weight:400;
 	color: #626262;
 	outline:none;
@@ -1305,7 +1305,7 @@ margin: 0 auto; }
 	display: none;
 	background: #fff;
 	position:relative;
-	font: 14px/1.55  "Roboto", Arial, Helvetica, sans-serif;
+	font: 14px/1.55  "Poppins", Arial, Helvetica, sans-serif;
 	-webkit-box-shadow: 0 0 4px rgba(0,0,0,.1);
 	-moz-box-shadow: 0 0 4px rgba(0,0,0,.1);
 	-o-box-shadow: 0 0 4px rgba(0,0,0,.1);
