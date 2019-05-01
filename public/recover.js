@@ -12,6 +12,7 @@ var config = {
 // var messagesRef = firebase.database().ref('messages');
 
 document.getElementById('statsForm').addEventListener('submit',submitForm);
+document.getElementById('device').addEventListener('submit',submitForm);
 
 function submitForm(e){
     e.preventDefault();
@@ -21,7 +22,6 @@ function submitForm(e){
     // var message = getInputVal('message');
     var input1 = document.getElementById('sleep');
     document.getElementById('chart').style.opacity = 1;
-    window.location.reload();
 }
 
 //retrieve data from db on patient's page
@@ -31,7 +31,7 @@ sleepRef.on("value",function(snapshot){
     console.log(sleep);
     var input1 = document.getElementById('sleep');
     input1.setAttribute("data-rel","88");
-    
+    // document.location.reload("true");
 });
 console.log(sleep);
 
