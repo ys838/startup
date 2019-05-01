@@ -48,7 +48,8 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
+	<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
 	</head>
 	<body>
 
@@ -105,8 +106,8 @@
 							</div>
 						</div>
 						<div class="col-md-4">
-							<p class="btn-cta" style="margin-bottom:10px"><a href="appointment.html"><span style="height:35px">Recoverer Log In</span></a></p>
-							<p class="btn-cta"><a href="green-horizotal\form-components.html"><span style="height:35px">Anchor Log In</span></a></p>
+							<p class="btn-cta" style="margin-bottom:10px"><a href="appointment.html"><span style="height:35px">Recoverer Sign Up</span></a></p>
+							<p class="btn-cta"><a onclick="googleLogin()" href = "#"><span style="height:35px">Anchor Log In</span></a></p>
 						</div>
 					</div>
 				</div>
@@ -153,7 +154,7 @@
 		   			<div class="row">
 			   			<div class="col-md-8 col-md-offset-2 col-md-pull-2 slider-text">
 			   				<div class="slider-text-inner">
-			   					<h1><strong>Powered by Psychology</strong></h1>
+			   					<h1><strong>Powered by Psychology</strong></h1> 
 									<h2>Checked by clinicians. Your medication is supposed to help you, help us make that happen better than ever before. </h2>
 									<p><a class="btn btn-primary btn-lg btn-learn" href="appointment.html">Learn More</a></p>
 			   				</div>
@@ -207,7 +208,7 @@
 						</div>
 						<div class="intro-grid color-3">
 							<span class="icon"><i class="flaticon-ambulance"></i></span>
-							<h3>Sprint 2</h3>
+							<h3>Final Presentation</h3>
 							<p>Demo Link TBD</p>
 							<a href="#">TBD</a>
 						</div>
@@ -224,206 +225,6 @@
 
 	<div><br><br></div>
 
-	<div id="colorlib-appointment">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<h2 class="line-block">Get Your Pill Cap Today</h2>
-					<p class="line-block"><br><br><a href="#" class="btn btn-primary btn-outline btn-cta">Take Control</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- <div id="colorlib-services">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-6 col-md-offset-3 text-center colorlib-heading">
-					<h2>Our Services</h2>
-					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="flaticon-healthy-1"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Qualified Doctors</a></h3>
-							<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="flaticon-hospital"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Medical Counseling</a></h3>
-							<p>Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="flaticon-ambulance"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Emergency Services</a></h3>
-							<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="flaticon-blood-donation"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Blood Bank</a></h3>
-							<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="flaticon-radiation"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Operation Theater</a></h3>
-							<p>Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="flaticon-medical"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Free Medicine</a></h3>
-							<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
-	<!-- <div id="colorlib-choose">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="choose">
-					<div class="half img-bg" style="background-image: url(images/img_bg_3.jpg);"></div>
-					<div class="half features-wrap">
-						<div class="colorlib-heading animate-box">
-							<h2>What Makes Us Best?</h2>
-						</div>
-						<div class="row">
-							<div class="col-md-6">
-								<div class="features animate-box">
-									<span class="icon text-center"><i class="flaticon-healthy-1"></i></span>
-									<div class="desc">
-										<h3>Qualified Doctors</h3>
-										<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
-									</div>
-								</div>
-								<div class="features animate-box">
-									<span class="icon text-center"><i class="flaticon-stethoscope"></i></span>
-									<div class="desc">
-										<h3>Free Consultation</h3>
-										<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="features animate-box">
-									<span class="icon text-center"><i class="flaticon-medical-1"></i></span>
-									<div class="desc">
-										<h3>Online Enrollment</h3>
-										<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
-									</div>
-								</div>
-								<div class="features animate-box">
-									<span class="icon text-center"><i class="flaticon-radiation"></i></span>
-									<div class="desc">
-										<h3>Modern Facilities</h3>
-										<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
-
-	<!-- <div id="colorlib-counter" class="colorlib-counters" style="background-image: url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
-					<div class="row">
-						<div class="col-md-3 col-sm-6 text-center animate-box">
-							<span class="icon"><i class="flaticon-healthy"></i></span>
-							<span class="colorlib-counter js-counter" data-from="0" data-to="3297" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Satisfied Customer</span>
-						</div>
-						<div class="col-md-3 col-sm-6 text-center animate-box">
-							<span class="icon"><i class="flaticon-hospital"></i></span>
-							<span class="colorlib-counter js-counter" data-from="0" data-to="378" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Hospitals</span>
-						</div>
-						<div class="col-md-3 col-sm-6 text-center animate-box">
-							<span class="icon"><i class="flaticon-healthy-1"></i></span>
-							<span class="colorlib-counter js-counter" data-from="0" data-to="400" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Qualified Doctor</span>
-						</div>
-						<div class="col-md-3 col-sm-6 text-center animate-box">
-							<span class="icon"><i class="flaticon-ambulance"></i></span>
-							<span class="colorlib-counter js-counter" data-from="0" data-to="30" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Departments</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
-
-
-
-
-	<!-- <div id="colorlib-register" style="background-image: url(images/img_bg_1.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-10 col-md-offset-1 animate-box">
-					<div class="date-counter text-center">
-						<h2>We offer <strong>Free Consultation</strong></h2>
-						<h3>By Dr. <strong>Beatrice Prior</strong></h3>
-						<p class="countdown">
-							<span id="days"></span>
-							<span id="hours"></span>
-							<span id="minutes"></span>
-							<span id="seconds"></span>
-						</p>
-						<p><strong>Limited offer, Hurry Up!</strong></p>
-						<p><a href="#" class="btn btn-primary btn-lg">Book an Appointment <i class="icon-calendar3"></i></a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
 
 
 
@@ -435,28 +236,6 @@
 					<h3>Product Narrative</h3>
 					<p>Anchor is a smart pill bottle that enables drug usage monitoring and empowers your support networks for addiction prevention purposes.</p>
 				</div>
-				<div class="col-md-3 col-md-push-1 colorlib-widget">
-					<!-- <h3>Navigation</h3>
-					<ul class="colorlib-footer-links">
-						<li><a href="#"><i class="icon-check"></i> Department</a></li>
-						<li><a href="#"><i class="icon-check"></i> Dashboard</a></li>
-						<li><a href="#"><i class="icon-check"></i> Contact</a></li>
-						<li><a href="#"><i class="icon-check"></i> Terms</a></li>
-						<li><a href="#"><i class="icon-check"></i> Shop</a></li>
-					</ul> -->
-				</div>
-
-				<!-- <div class="col-md-3 colorlib-widget">
-					<h3>Our Services</h3>
-					<ul class="colorlib-footer-links">
-						<li><a href="#"><i class="icon-check"></i> Heart Surgery</a></li>
-						<li><a href="#"><i class="icon-check"></i> Surgical Treatment</a></li>
-						<li><a href="#"><i class="icon-check"></i> General Treatment</a></li>
-						<li><a href="#"><i class="icon-check"></i> Medical Treatment</a></li>
-						<li><a href="#"><i class="icon-check"></i> Help Desk</a></li>
-					</ul>
-				</div> -->
-
 				<div class="col-md-3 colorlib-widget">
 					<h3>Contact Us</h3>
 					<form class="contact-form">
@@ -497,12 +276,35 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
 
+	<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  <!-- Firebase Core -->
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+  <!-- Authentication -->
+	<script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+	<!-- RealTime Database -->
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+
+	<script>
+			// Initialize Firebase
+			var config = {
+				apiKey: "AIzaSyAKxK17wAvmQkVJwLhFxGB6tcTQDMLvTeU",
+				authDomain: "anchor-me.firebaseapp.com",
+				databaseURL: "https://anchor-me.firebaseio.com",
+				projectId: "anchor-me",
+				storageBucket: "anchor-me.appspot.com",
+				messagingSenderId: "1060146172993"
+			};
+	
+			firebase.initializeApp(config);
+	</script>
+
+	<script src = "firebasejs/test.js"></script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+				<!-- <script src="js/bootstrap.min.js"></script> -->
 	<!-- Waypoints -->
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Stellar Parallax -->

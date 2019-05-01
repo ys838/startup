@@ -11,6 +11,17 @@ var config = {
 //reference messages collection
 // var messagesRef = firebase.database().ref('messages');
 
+document.getElementById('statsForm').addEventListener('submit',submitForm);
+
+function submitForm(e){
+    e.preventDefault();
+    // console.log(123);
+    //get values
+    // var name = getInputVal('name');
+    // var message = getInputVal('message');
+    var input1 = document.getElementById('sleep');
+    input1.setAttribute("data-rel","88");
+}
 
 //retrieve data from db on patient's page
 var sleepRef = firebase.database().ref("anchors/Douglas/Sleep");
@@ -18,7 +29,7 @@ sleepRef.on("value",function(snapshot){
     var sleep = snapshot.val();
     console.log(sleep);
     var input1 = document.getElementById('sleep');
-    input1.setAttribute("data-rel",80);
+    input1.setAttribute("data-rel","88");
 });
 console.log(sleep);
 

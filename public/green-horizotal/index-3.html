@@ -619,7 +619,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    <form id="stats">
+                    <form id="statsForm">
                     <div class="email-statis-inner notika-shadow">
                         <div class="email-ctn-round">
                             <div class="email-rdn-hd">
@@ -627,7 +627,7 @@
 							</div>
                             <div class="email-statis-wrap">
                                 <div class="email-round-nock">
-                                    <input type="text" id="sleep" class="knob" value="0" data-rel="55" data-linecap="round" data-width="130" data-bgcolor="#E4E4E4" data-fgcolor="#5f3192" data-thickness=".10" data-readonly="true">
+                                    <input type="text" id="sleep" class="knob" value="0" data-rel="55" data-linecap="round" data-width="130" data-bgcolor="#E4E4E4" data-fgcolor="#5f3192" data-thickness=".10" data-readonly="true" disabled>
                                 </div>
                                 <div class="email-ctn-nock">
                                     <p>Optimal Behavior Score</p>
@@ -658,9 +658,12 @@
                                         <p>Mood Score</p>
                                     </div>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
+                    <button type="submit">Refresh</button>
+                    
                 </form>
                 </div>
                 <div class="ongoing-task-inner notika-shadow mg-t-30">
