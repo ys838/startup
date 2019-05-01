@@ -20,7 +20,7 @@ function submitForm(e){
     // var name = getInputVal('name');
     // var message = getInputVal('message');
     var input1 = document.getElementById('sleep');
-    input1.setAttribute("data-rel","88");
+    document.getElementById('chart').style.opacity = 1;
 }
 
 //retrieve data from db on patient's page
