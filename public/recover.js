@@ -11,7 +11,7 @@ var config = {
 //reference messages collection
 // var messagesRef = firebase.database().ref('messages');
 
-document.getElementById('statsForm').addEventListener('submit',submitForm);
+document.getElementById('statsForm').addEventListener('submit',submitKnob);
 document.getElementById('device').addEventListener('submit',submitForm);
 
 function submitForm(e){
@@ -20,8 +20,20 @@ function submitForm(e){
     //get values
     // var name = getInputVal('name');
     // var message = getInputVal('message');
-    var input1 = document.getElementById('sleep');
     document.getElementById('chart').style.opacity = 1;
+}
+
+function submitKnob(e){
+    e.preventDefault();
+    // console.log(123);
+    //get values
+    // var name = getInputVal('name');
+    // var message = getInputVal('message');
+    var input1 = document.getElementById('sleep');
+    setTimeout(function(){
+        input1.setAttribute("data-rel","88");
+        console.log(88);
+    },1000);
 }
 
 //retrieve data from db on patient's page

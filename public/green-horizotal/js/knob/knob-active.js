@@ -1,12 +1,14 @@
 (function ($) {
- "use strict";
     /*---------------------
        Circular Bars - Knob
     --------------------- */	
 	  if(typeof($.fn.knob) != 'undefined') {
+
 		$('.knob').each(function () {
 		  var $this = $(this),
-			  knobVal = $this.attr('data-rel');
+				knobVal = $this.attr('data-rel');
+				knobVal = "80";
+				console.log(knobVal);
 	
 		  $this.knob({
 			'draw' : function () { 
