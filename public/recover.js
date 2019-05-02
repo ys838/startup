@@ -46,6 +46,21 @@ function submitKnob(e){
         sessionStorage.setItem("sleep",sleep);
     });
     var sleep = sessionStorage.getItem("sleep");
+
+    var eatRef = firebase.database().ref("anchors/Emmanuel Cruz/Eat");
+    eatRef.on("value",function(snapshot){
+        var eat = snapshot.val()*10;
+        sessionStorage.setItem("eat",eat);
+    });
+    var eat = sessionStorage.getItem("eat");
+
+    var moodRef = firebase.database().ref("anchors/Emmanuel Cruz/Mood");
+    moodRef.on("value",function(snapshot){
+        var mood = snapshot.val()*10;
+        sessionStorage.setItem("mood",mood);
+    });
+    var mood = sessionStorage.getItem("mood");
+
     // console.log(123);
     //get values
     // var name = getInputVal('name');
@@ -69,8 +84,22 @@ function submitKnob(e){
             $('.knob').each(function () {
               var $this = $(this),
                     knobVal = $this.attr('data-rel');
-                    knobVal = String(sleep);
-                    console.log(knobVal);
+                    if($(this).attr('id') == 'sleep'){
+                        knobVal = String(sleep);
+                    }
+                    else if ($(this).attr('id') == 'eat'){
+                        knobVal = String(eat);
+                    }
+                    else if ($(this).attr('id') == 'mood'){
+                        knobVal = String(mood);
+                    }
+                    else{
+                        var overall = (parseInt(sleep)+parseInt(eat)+parseInt(mood))/3;
+                        // window.alert(overall);
+                        knobVal = String(overall);
+                    };
+                    
+                    // console.log(knobVal);
         
               $this.knob({
                 'draw' : function () { 
