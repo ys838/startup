@@ -37,7 +37,7 @@ function submitForm(e){
 function submitKnob(e){
     e.preventDefault();
     // document.location.reload("true");
-    var sleepRef = firebase.database().ref("anchors/Summer Shi/Sleep");
+    var sleepRef = firebase.database().ref("anchors/Emmanuel Cruz/Sleep");
     sleepRef.on("value",function(snapshot){
         var sleep = snapshot.val()*10;
         sessionStorage.setItem("sleep",sleep);
