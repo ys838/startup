@@ -74,6 +74,9 @@ function submitKnob(e){
     document.getElementById('starbucks').innerHTML = "<span>100%</span>";
     document.getElementById('starbucks').style.width = "100%";
     document.getElementById('goodwork').style.display = 'block';
+    setTimeout(function(){
+        document.getElementById('goodwork').style.display = 'none';
+    },4000);
     
     (function ($) {
         /*---------------------
