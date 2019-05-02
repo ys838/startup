@@ -176,11 +176,11 @@
 
         ],
         dataset = [{
-            label: "Prescribed",
+            label: "Recommended",
             data: data1,
-            color: "#f2684b",
+            color: "#b12e53",
             points: {
-                fillColor: "#f2684b",
+                fillColor: "#b12e53",
                 show: !0,
                 radius: 2
             },
