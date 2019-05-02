@@ -23,17 +23,26 @@ function submitForm(e){
     document.getElementById('chart').style.opacity = 1;
 }
 
-var sleepRef = firebase.database().ref("anchors/Summer Shi/Sleep");
-var sleep = 0;
-sleepRef.on("value",function(snapshot){
-    sleep = snapshot.val()*10;
-});
-console.log(sleep);
+// var sleepRef = firebase.database().ref("anchors/Summer Shi/Sleep");
+// sleepRef.on("value",function(snapshot){
+//     var sleep = snapshot.val()*10;
+//     sessionStorage.setItem("sleep",sleep);
+// });
+// var sleep = sessionStorage.getItem("sleep");
+// console.log(sleep);
+// window.alert("working");
 
 
 
 function submitKnob(e){
     e.preventDefault();
+    // document.location.reload("true");
+    var sleepRef = firebase.database().ref("anchors/Summer Shi/Sleep");
+    sleepRef.on("value",function(snapshot){
+        var sleep = snapshot.val()*10;
+        sessionStorage.setItem("sleep",sleep);
+    });
+    var sleep = sessionStorage.getItem("sleep");
     // console.log(123);
     //get values
     // var name = getInputVal('name');
@@ -54,7 +63,7 @@ function submitKnob(e){
             $('.knob').each(function () {
               var $this = $(this),
                     knobVal = $this.attr('data-rel');
-                    knobVal = "80";
+                    knobVal = String(sleep);
                     console.log(knobVal);
         
               $this.knob({
