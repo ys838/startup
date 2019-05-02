@@ -21,6 +21,9 @@ function submitForm(e){
     // var name = getInputVal('name');
     // var message = getInputVal('message');
     document.getElementById('chart').style.opacity = 1;
+    document.getElementById('linked').innerHTML = 'LINKED';
+    document.getElementById('linked').style.background = "#79c879";
+
 }
 
 // var sleepRef = firebase.database().ref("anchors/Summer Shi/Sleep");
@@ -53,6 +56,9 @@ function submitKnob(e){
     //     input1.setAttribute("data-rel","88");
     //     console.log(88);
     // },1000);
+    document.getElementById('starbucks').innerHTML = "<span>100%</span>";
+    document.getElementById('starbucks').style.width = "100%";
+    document.getElementById('goodwork').style.display = 'block';
     
     (function ($) {
         /*---------------------
