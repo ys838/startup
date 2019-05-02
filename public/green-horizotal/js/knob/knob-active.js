@@ -7,7 +7,7 @@
 		$('.knob').each(function () {
 		  var $this = $(this),
 				knobVal = $this.attr('data-rel');
-				knobVal = "80";
+				// knobVal = "80";
 				console.log(knobVal);
 	
 		  $this.knob({
