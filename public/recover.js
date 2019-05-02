@@ -96,7 +96,7 @@ function submitKnob(e){
                     else{
                         var overall = (parseInt(sleep)+parseInt(eat)+parseInt(mood))/3;
                         // window.alert(overall);
-                        knobVal = String(overall);
+                        knobVal = String(Math.round(overall));
                     };
                     
                     // console.log(knobVal);
